@@ -76,6 +76,7 @@ class Home extends Component {
               onChange={(val, str)=>{
                   this.props.getLogsByDate(str[0], str[1]);
               }}
+              
               onStartChange={(val, str) =>{
                 const d = new Date();
                 const dateString = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();

@@ -2,6 +2,7 @@
  * Combine all reducers in this file and export the combined reducers.
  */
 
+ 
 import { combineReducers } from 'redux';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
@@ -25,6 +26,8 @@ import { reducer as ResourceReducer } from './pages/Resource/store';
 
 import { reducer as CDHLogReducer } from './pages/Log/components/CDHLog/store';
 import { reducer as PlatformLogReducer } from './pages/Log/components/PlatformLog/store';
+
+
 
 // Initial routing state
 const routeInitialState = {

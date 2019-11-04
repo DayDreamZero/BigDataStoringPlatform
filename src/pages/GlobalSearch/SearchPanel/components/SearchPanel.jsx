@@ -12,6 +12,7 @@ import { actionCreators } from '../store';
 import { withRouter } from 'react-router';
 import { getSearchDataAxios } from '../../../../api/search';
 
+
 const { Row, Col } = Grid;
 
 const RadioGroup = Radio.Group;
@@ -24,6 +25,7 @@ const radioList = [
     label: '精确查询'
   }
 ];
+
 
 @withRouter
 class SearchOperation extends Component {

@@ -231,6 +231,7 @@ const mapDispatch = (dispatch) => ({
 
 export default connect(mapState, mapDispatch)(CustomPieChart);
 
+
 const styles = {
   customPieChart: {
     float: 'left',

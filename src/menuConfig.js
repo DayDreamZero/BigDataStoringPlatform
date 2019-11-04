@@ -4,6 +4,7 @@
 const headerMenuConfig = [
 ];
 
+
 const asideMenuConfig = [
   {
     name: '全局搜索',
