@@ -81,10 +81,6 @@
     "/api": {
       "enable": true,
       "target": "http://192.168.0.216:8080"
-    },
-    "/hbase": {
-      "enable": true,
-      "target": "http://192.168.0.113:8080"
     }
   }
   

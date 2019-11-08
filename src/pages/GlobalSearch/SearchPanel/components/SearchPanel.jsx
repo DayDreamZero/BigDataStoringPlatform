@@ -80,16 +80,16 @@ class SearchOperation extends Component {
     });
   }
 
-  // getdata = () => {
-  //   getSearchDataAxios("fuzzy","all","address",1).then(function (response) {
-  //     console.log(response);
-  //   });
-  // }
+  getdata = () => {
+    getSearchDataAxios("fuzzy","all","address",1).then(function (response) {
+      console.log(response);
+    });
+  }
 
-  // componentDidMount(){
-  //   this.getdata();
-  //   this.props.onSearch("all","","fuzzy");
-  // }
+  componentDidMount(){
+    this.getdata();
+    this.props.onSearch("all","","fuzzy");
+  }
 
   render(){
     const tableData = [{...this.props.tableData}];

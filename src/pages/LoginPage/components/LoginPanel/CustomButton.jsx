@@ -9,13 +9,13 @@ export default CustomButton;
 
 const styles = {
   button: {
-    marginTop: '40px',
-    width: '180px',
-    height: '48px',
-    lineHeight: '48px',
+    marginTop: '30px',
+    width: '210px',
+    height: '32px',
+    lineHeight: '32px',
     textAlign: 'center',
-    borderRadius: '50px',
+    borderRadius: '6px',
     border: '1px solid #9816f4',
-    boxShadow: '0px 5px 10px 2px rgba(152,22,244,0.19)',
+    background: 'linear-gradient(to right,#005BAC 0%, #3399FF 100%)',
   },
 };

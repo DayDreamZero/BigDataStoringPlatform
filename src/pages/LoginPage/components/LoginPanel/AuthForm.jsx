@@ -148,14 +148,24 @@ class AuthForm extends Component {
 }
 
 const styles = {
+  formContainer: {
+    float: 'right',
+    width: '280px',
+  },
   formTitle: {
-    marginBottom: '40px',
-    fontWeight: '500',
-    fontSize: '32px',
+    marginBottom: '30px',
+    fontWeight: '400',
+    fontSize: '22px',
     textAlign: 'center',
-    letterSpacing: '4px',
+    color: '#fff',
   },
   formItem: {
+    alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column'
+
+  },
+  formItemCol: {
     marginBottom: '20px',
   },
   submitButton: {

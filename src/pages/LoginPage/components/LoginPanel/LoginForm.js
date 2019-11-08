@@ -137,7 +137,7 @@ export default class LoginFrom extends Component {
 
     return (
       <AuthForm
-        title="登录"
+        title="WeShare存储计算平台"
         config={config}
         initFields={initFields}
         formChange={this.formChange}

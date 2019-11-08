@@ -16,18 +16,21 @@ export default class LoginPanel extends Component {
 
   render() {
     return (
-      // <div style={styles.container}>
-        <Row wrap style={styles.row}>
-          <Col l="16" style={styles.col}>
+      <div style={styles.container}>
+          {/*<Col l="16" style={styles.col}>
             <LoginIntro />
-          </Col>
-          <Col l="8" style={styles.col}>
+          </Col>*/}
             <div style={styles.content}>
-              <LoginForm />
+                <div style={styles.logo}></div>
+                <LoginForm style={styles.login}/>
             </div>
-          </Col>
-        </Row>
-      // </div>
+            <div style={styles.footer}>
+              <div  style={styles.footerRow}>
+                <span style={{fontSize: '12px'}}>版权所有@河钢数字技术股份有限公司 | 版本1.0.0</span>
+              </div>
+              <div style={styles.footerRow}>WeShare物联网大数据平台让您的数据焕发全新生产力</div>
+            </div>
+      </div>
     );
   }
 }
@@ -38,6 +41,9 @@ const styles = {
     width: '100wh',
     minWidth: '1200px',
     height: '100vh',
+    backgroundImage: `url(${require('./images/bg2.jpg')})`,
+    backgroundSize: 'cover',
+    display: 'flex'
   },
   row: {
     padding: '0',
@@ -45,11 +51,45 @@ const styles = {
   col: {
     padding: '0',
   },
-  content: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-    background: '#fff',
+  logo: {
+    width: '139px',
+    height: '139px',
+    top: '0',
+    bottom: '0',
+    left: '0',
+    right: '0',
+    margin : 'auto 40px',
+    backgroundImage: `url(${require('./images/logo1.jpg')})`,
+    backgroundSize: 'cover',
   },
+  content: {
+    position: 'absolute',
+    top: '0',
+    left: '0',
+    bottom: '0',
+    right: '0',
+    margin: 'auto',
+    height: '280px',
+    width: '520px',
+    background: 'rgba(0,91,172,0.35)',
+    border: '1px solid #007CD4',
+    borderRadius: '6px',
+    display: 'flex',
+  },
+  login: {
+    top: '0',
+    bottom: '0',
+    margin : 'auto',
+  },
+  footer: {
+    fontSize: '14px',
+    margin: '18px auto',
+    textAlign: 'center',
+    color: '#666',
+    display: 'flex',
+    flexDirection: 'column-reverse'
+  },
+  footerRow:{
+    marginBottom: '8px',
+  }
 };

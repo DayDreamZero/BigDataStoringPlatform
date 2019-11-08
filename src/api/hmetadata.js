@@ -1,6 +1,6 @@
 import fetch from '../utils/request';
 
-//hmetadata部分的接口
+//hbasemeta部分的接口
 export async function gerCellDataAxios(tableName,rowkey,columnFamily,column) {
   const params = {
     tableName,
@@ -9,7 +9,7 @@ export async function gerCellDataAxios(tableName,rowkey,columnFamily,column) {
     column
   };
   return fetch({
-    url: '/hbase/hmetadata/cellData',
+    url: '/api/hbasemeta/cellData',
     method: 'get',
     params
   });
@@ -21,7 +21,7 @@ export async function getColumnsAxios(tableName,columnFamily) {
     columnFamily
   };
   return fetch({
-    url: '/hbase/hmetadata/getcolumns',
+    url: '/api//hbasemeta/columns',
     method: 'get',
     params
   });
@@ -29,7 +29,7 @@ export async function getColumnsAxios(tableName,columnFamily) {
 
 export async function getTablesAxios() {
   return fetch({
-    url: '/hbase/hmetadata/gettables',
+    url: '/api/hbasemeta/tables',
     method: 'get'
   });
 }
@@ -40,7 +40,7 @@ export async function getRowDataAxios(tableName,rowkey) {
     rowkey
   };
   return fetch({
-    url: '/hbase/hmetadata/rowdata',
+    url: '/api/hbasemeta/rowData',
     method: 'get',
     params
   });
@@ -53,7 +53,7 @@ export async function getRowRangeDataAxios(tableName,startRow,rowNum) {
     rowNum
   };
   return fetch({
-    url: '/hbase/hmetadata/rowRangeData',
+    url: '/api/hbasemeta/rowRangeData',
     method: 'get',
     params
   });
@@ -64,7 +64,7 @@ export async function getTableDataAxios(tableName) {
     tableName
   };
   return fetch({
-    url: '/hbase/hmetadata/tableData',
+    url: '/api/hbasemeta/tableData',
     method: 'get',
     params
   });
