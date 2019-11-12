@@ -22,7 +22,7 @@ export default class LoginPanel extends Component {
           </Col>*/}
             <div style={styles.content}>
                 <div style={styles.logo}></div>
-                <LoginForm style={styles.login}/>
+                <LoginForm/>
             </div>
             <div style={styles.footer}>
               <div  style={styles.footerRow}>
@@ -58,7 +58,7 @@ const styles = {
     bottom: '0',
     left: '0',
     right: '0',
-    margin : 'auto 40px',
+    margin : 'auto 35px',
     backgroundImage: `url(${require('./images/logo1.jpg')})`,
     backgroundSize: 'cover',
   },
@@ -75,11 +75,6 @@ const styles = {
     border: '1px solid #007CD4',
     borderRadius: '6px',
     display: 'flex',
-  },
-  login: {
-    top: '0',
-    bottom: '0',
-    margin : 'auto',
   },
   footer: {
     fontSize: '14px',

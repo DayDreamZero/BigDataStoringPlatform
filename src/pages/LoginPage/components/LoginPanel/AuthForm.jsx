@@ -77,15 +77,16 @@ class AuthForm extends Component {
 
   renderInput = (item) => {
     return (
-      <Row style={styles.formItem} key={item.label}>
+      <Row key={item.label}>
         <Col style={styles.formItemCol}>
           <IceFormBinder {...item.formBinderProps}>
             <CustomInput {...item.componentProps} onPressEnter={this.pressEnter}/>
           </IceFormBinder>
-        </Col>
-        <Col>
           <IceFormError name={item.formBinderProps.name} />
         </Col>
+        {/* <Col>
+          
+        </Col> */}
       </Row>
     );
   };
@@ -150,7 +151,7 @@ class AuthForm extends Component {
 const styles = {
   formContainer: {
     float: 'right',
-    width: '280px',
+    width: '290px',
   },
   formTitle: {
     marginBottom: '30px',
