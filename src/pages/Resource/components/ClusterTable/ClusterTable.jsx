@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Table, Pagination, Button, Dialog, Balloon, Feedback, Loading } from '@icedesign/base';
+import { Table, Pagination, Button, Dialog, Balloon, Feedback, Loading,Dropdown, Menu } from '@icedesign/base';
 import { connect } from 'react-redux';
 import { actionCreators } from '../../store';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
+
 
 @withRouter
 
@@ -15,6 +16,7 @@ class Home extends Component {
   //     visible: false,
   //   };
   // }
+
   onRowClick = (record, index, e) => {
     localStorage.setItem('onRowClickClusterName', record.clusterName);
     console.log(record.clusterName);
@@ -83,44 +85,41 @@ class Home extends Component {
       const userName = localStorage.getItem('userName');
       console.log(userName);
       return (
-        <div>
-          <Button 
-            type="primary" 
-            style={{background:'#2077FF'}} 
-            onClick={
-              (e)=>{ 
-                that.bindUserCluster(record.clusterName);
-                e.stopPropagation();
+        <Dropdown trigger={<Button>选择操作</Button>} triggerType="click">
+          <Menu>
+            <Menu.Item
+              type="primary" 
+              onClick={
+                ()=>{ 
+                  that.bindUserCluster(record.clusterName);
+                }
               }
-            }
-          >
-            绑定
-          </Button>
-          <Button
-            type="secondary"
-            style={{background:'#FFC107'}}
-            onClick={
-              (e)=>{    
-                that.unbindUserCluster(record.clusterName);
-                e.stopPropagation();
+            >绑定</Menu.Item>
+            <Menu.Item
+              type="secondary"
+              onClick={
+                ()=>{    
+                  that.unbindUserCluster(record.clusterName);
+                }
               }
-            }
-          >
-            解绑
-          </Button>
-          <Button 
-            type="primary"
-            shape="warning"
-            onClick={
-              (e)=>{    
-                that.recycleCluster(record.clusterName, userName, that.props.current);
-                e.stopPropagation();
+            >解绑</Menu.Item>
+            <Menu.Item
+              type="primary"
+              shape="warning"
+              onClick={
+                ()=>{    
+                  that.recycleCluster(record.clusterName, userName, that.props.current);
+                }
               }
-            }
-          >
-            回收
-          </Button>
-        </div>
+            >回收</Menu.Item>
+            <Menu.Item>
+              <Link to='/hbaseMetaData' style={{color: '#000'}}>元数据查看</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to='/globalSearch' style={{color: '#000'}}>全局搜索</Link>
+            </Menu.Item>
+          </Menu>
+        </Dropdown>
       )
     }
   }

@@ -6,7 +6,7 @@
 import { combineReducers } from 'redux';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
-import { reducer as SearchReducer } from './pages/GlobalSearch/SearchPanel/store';
+import { reducer as SearchReducer } from './pages/Resource/GlobalSearch/store';
 
 import { reducer as selfAuthoritiesReducer } from './pages/Permission/SelfAuthorities/store';
 import { reducer as editAuthorityReducer } from './pages/Permission/EditAuthority/store';

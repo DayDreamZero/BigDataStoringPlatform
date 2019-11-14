@@ -7,23 +7,6 @@ const headerMenuConfig = [
 
 const asideMenuConfig = [
   {
-    name: '全局搜索',
-    path: '/globalSearch',
-    icon: 'search',
-    zeroVisible: true,
-    firstVisible: true,
-    secondVisible: true,
-    children: [
-      {
-        name: '全局搜索',
-        path: '/globalSearch/Search',
-        zeroVisible: true,
-        firstVisible: true,
-        secondVisible: false,
-      },
-    ],
-  },
-  {
     name: '用户管理',
     path: '/userManagement',
     icon: 'person',

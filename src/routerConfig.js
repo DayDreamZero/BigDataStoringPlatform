@@ -46,9 +46,9 @@ import NotPermission from './components/NotPermission';
 import BasicException from './components/BasicException';
 import NotLogin from './components/NotLogin';
 
-import GlobalSearch from './pages/GlobalSearch/SearchPanel';
+import GlobalSearch from './pages/Resource/GlobalSearch';
 
-import CheckData from './pages/HMetaData/CheckData';
+import CheckData from './pages/Resource/CheckData';
 
 
 const routerConfig = [
@@ -158,6 +158,16 @@ const routerConfig = [
     component: ClusterResourceManage,
   },
   {
+    path: '/globalSearch',
+    layout: NormalLayout,
+    component: GlobalSearch,
+  },
+  {
+    path: '/hbaseMetaData',
+    layout: NormalLayout,
+    component: CheckData,
+  },
+  {
     path: '/VisInstall/createMV',
     layout: NormalLayout,
     component: VisInstall,
@@ -197,13 +207,9 @@ const routerConfig = [
     layout: NormalLayout,
     component: NotLogin,
   },
+  
   {
-    path: '/globalSearch/Search',
-    layout: NormalLayout,
-    component: GlobalSearch,
-  },
-  {
-    path: '/hbase',
+    path: '/hbaseMetaData/checkData',
     layout: NormalLayout,
     component: CheckData,
   }

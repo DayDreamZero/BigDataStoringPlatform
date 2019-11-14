@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { actionCreators } from '../store';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import { getTableDataAxios } from '../../../../api/hmetadata'
+import { getTablesAxios } from '../../../../api/hmetadata'
 
 @withRouter
 class CheckData extends Component {
@@ -42,7 +42,7 @@ class CheckData extends Component {
   // };
 
   getTables = () => {
-    getTableDataAxios('a').then(function (response) {
+    getTablesAxios().then(function (response) {
       console.log(response);
     })
   }
