@@ -9,7 +9,7 @@ export default class Logo extends PureComponent {
     return (
       <div style={styles.container}>
         <img style={styles.img} src={logoImage}></img>
-        大数据存储平台
+        <span style={{lineHeight: '15px'}}>WeShare存储计算平台</span>
       </div>
     );
   }
@@ -18,18 +18,17 @@ export default class Logo extends PureComponent {
 const styles = {
   container: {
     backgroundSize: 'cover',
-    width:"200px",
+    width: '200px',
     height: '80px',
     backgroundColor:'#007cd4',
     color: '#fff',
-    lineHeight: '60px',
-    fontSize: '18px',
+    fontSize: '15px',
   },
   img: {
-    height: "50px",
-    width: "50px",
+    height: "45px",
+    width: "45px",
     position: 'relative',
-    top: '15px',
-    marginRight: '5px',
+    top: '17.5px',
+    padding: '5px',
   },
 }

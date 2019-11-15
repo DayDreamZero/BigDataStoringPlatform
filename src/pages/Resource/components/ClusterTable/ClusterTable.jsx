@@ -94,6 +94,7 @@ class Home extends Component {
                   that.bindUserCluster(record.clusterName);
                 }
               }
+              style={{color: '#000'}}
             >绑定</Menu.Item>
             <Menu.Item
               type="secondary"
@@ -102,6 +103,7 @@ class Home extends Component {
                   that.unbindUserCluster(record.clusterName);
                 }
               }
+              style={{color: '#000'}}
             >解绑</Menu.Item>
             <Menu.Item
               type="primary"
@@ -111,6 +113,7 @@ class Home extends Component {
                   that.recycleCluster(record.clusterName, userName, that.props.current);
                 }
               }
+              style={{color: '#000'}}
             >回收</Menu.Item>
             <Menu.Item>
               <Link to='/hbaseMetaData' style={{color: '#000'}}>元数据查看</Link>
