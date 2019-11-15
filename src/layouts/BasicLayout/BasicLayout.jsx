@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 
 import MainRoutes from './MainRoutes';
 
+
 import './scss/index.scss';
 
 // 设置默认的皮肤配置，支持 dark 和 light 两套皮肤配置
@@ -67,7 +68,7 @@ export default class BasicLayout extends Component {
     const header = <Header theme={theme} isMobile={isMobile} />;
 
     const aside = (
-      <Layout.Aside theme={theme} width="auto">
+      <Layout.Aside theme={theme} width="200px">
         <Aside isMobile={isMobile} />
       </Layout.Aside>
     );
@@ -81,7 +82,9 @@ export default class BasicLayout extends Component {
         {header}
         <Layout.Section>
           {aside}
-          <Layout.Main scrollable>{content}</Layout.Main>
+          <Layout.Main scrollable
+            
+          >{content}</Layout.Main>
         </Layout.Section>
         {footer}
       </Layout>

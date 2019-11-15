@@ -16,10 +16,11 @@
   border-color:  #003399 #005BAC #003399 !important;
   background: rgba(0,91,172,0.35) !important;
   margin-left: 25px;
+  padding: 1px;
   input {
     color: #fff !important;
   }
-  input:focus{
+  :focus, :hover{
     background: -webkit-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
     background: -o-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
     background: -moz-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
@@ -27,14 +28,7 @@
     background: linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
     color: #fff;
   }
-  input:hover{
-    background: -webkit-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
-    background: -o-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
-    background: -moz-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
-    background: -mos-linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
-    background: linear-gradient(to right,rgba(0,91,172,0.5) 0%, rgb(0,91,172) 50%,rgb(0,91,172) 100%);
-    color: #fff;
-  }
+
 }
 
 // .nextInput:hover{

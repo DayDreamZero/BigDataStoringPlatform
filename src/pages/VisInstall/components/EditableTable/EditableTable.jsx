@@ -631,7 +631,7 @@ const styles = {
     marginBottom: 0
   },
   addNewItem: {
-    background: "#c7a47b",
+    background: '#007cd4',
     height: 32,
     lineHeight: "32px",
     marginTop: 20,

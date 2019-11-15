@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom';
 import { headerMenuConfig } from '../../../../menuConfig';
 import Logo from '../Logo';
 
+import userImg from '../../images/user.png'
+
 import './scss/dark.scss';
 import './scss/light.scss';
 
@@ -68,11 +70,13 @@ class Header extends PureComponent {
           <Balloon
             trigger={
               <div className="ice-design-header-userpannel">
-                <IceImg
+                <img
                   height={40}
                   width={40}
-                  src="https://img.alicdn.com/tfs/TB1L6tBXQyWBuNjy0FpXXassXXa-80-80.png"
+                  // src="https://img.alicdn.com/tfs/TB1L6tBXQyWBuNjy0FpXXassXXa-80-80.png"
                   // src="/public/timg.jpg"
+                  src={userImg}
+                  
                   className="user-avatar"
                 />
                 <div className="user-profile">
@@ -80,8 +84,6 @@ class Header extends PureComponent {
                 </div>
                 <Icon
                   type="arrow-down-filling"
-
-
                   size="xxs"
                   className="icon-down"
                 />

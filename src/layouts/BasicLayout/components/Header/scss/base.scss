@@ -2,7 +2,8 @@
 .ice-layout-theme-#{$theme} {
   &.ice-design-layout-header {
     width: 100%;
-    padding: 10px 0px;
+    padding: 0  20px 0 0;
+    height: 80px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,9 @@
     .user-avatar {
       margin-right: 12px;
       border-radius: 4px;
+      background-color: #eee;
+      border: solid 2px #797979;
+      padding: 8px;
     }
     .ice-design-layout-header-menu {
       display: flex;
@@ -53,7 +57,7 @@
 
 .user-profile-menu {
   width: 130px;
-  border-radius: 6px;
+  // border-radius: 6px;
   padding: 0 16px;
   .user-profile-menu-item {
     height: 40px;

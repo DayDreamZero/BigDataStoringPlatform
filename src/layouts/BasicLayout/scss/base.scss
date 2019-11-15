@@ -13,17 +13,20 @@ body {
     background-attachment: fixed;
   }
 
+  
+
   .ice-layout {
-    padding: 0 20px;
+    // padding: 0 20px;
     background: transparent;
   }
 
   .ice-layout-main {
-    padding: 0 0 0 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: #f0f2f5;
   }
 
   .ice-layout-section {
-    margin: 20px 0 0;
+    // margin: 20px 0 0;
   }
 }
 

@@ -86,7 +86,7 @@ class Home extends Component {
       console.log(userName);
       return (
         <Dropdown trigger={<Button>选择操作</Button>} triggerType="click">
-          <Menu>
+          <Menu style={styles.dropdown}>
             <Menu.Item
               type="primary" 
               onClick={
@@ -223,4 +223,7 @@ const styles = {
   stateText: {
     color: '#28a745',
   },
+  dropdown: {
+    position: 'relative',
+  }
 };
