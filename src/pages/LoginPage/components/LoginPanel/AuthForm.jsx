@@ -150,8 +150,7 @@ class AuthForm extends Component {
 
 const styles = {
   formContainer: {
-    float: 'right',
-    width: '290px',
+    width: '330px',
   },
   formTitle: {
     marginBottom: '30px',
